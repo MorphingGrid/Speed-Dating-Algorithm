@@ -1,7 +1,16 @@
-# Speed-Dating-Algorithm
+![banner](assets/banner.png)
 
-Final Project for STA4724 completed by: Cameron Ezazi,Vinh Van, Benjamin Willett, Tori Wright
+# Key Insight: People who are attractive, funny and have shared interests are seen as more desirable by potential partners
 
-The goal of this project was to find the most Desirable Characteristics and Attributes that were the most statistically significant in partner selection from a Speed Dating Experiment. The data was taken from “Gender Differences in Mate Selection: Evidence From a Speed Dating Experiment” by Columbia Business School. 
+# Author
+- Cameron Ezazi
+- Benjamin Willett
+- Tori Wright
+- [Vinh Van](https://github.com/MorphingGrid)
 
-Stored in the repository is the csv file, a word document containing a key and description for the csv, and the final code template done in Jupyter Notebook implementing models such as KNN, Decision Trees and Random Forest. 
+## Table of Contents
+- [Data Problem](#data-problem)
+
+## Data Problem
+The purpose of this study aims to determine the most desirable attributes in a person that people look for when searching for a potential partner, using popular Classification Models such as KNN, Decision Trees and Random Forest. More than ever, people are connected to others through their electornics and smart phones, but the frequency of face to face interaction is on the downtrend, resulting in many feeling growing feelings of social anxiety and second guessing their social ability. This project aims to help classify what is seen as desirable in modern society to help people navigate the information age. 
+
