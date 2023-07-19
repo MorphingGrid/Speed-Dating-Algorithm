@@ -32,4 +32,24 @@ The purpose of this study aims to determine the most desirable attributes in a p
 - Random Forest
 - Performance Validation
 
-## Results
+## Results  
+ROC Curve of the Classification Models  
+![roc](assets/roc.png)  
+
+Confusion Matrix for KNN  
+![knn](assets/knn.png)  
+
+Confusion Matrix for Decision Trees  
+![dt](assets/dt.png)  
+
+Confusion Matrix for Random Forest  
+![rf](assets/rf.png)
+
+Top 3 models (by AUC)
+
+| Model     	                | AUC 	|
+|-------------------	        |------------------	|
+| KNN     	                  | 90% 	            |
+| Random Forest 	            | 86% 	            |
+| Decision Trees         	    | 82% 	            |
+
