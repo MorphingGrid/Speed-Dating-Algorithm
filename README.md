@@ -31,7 +31,8 @@ The purpose of this study aims to determine the most desirable attributes in a p
 - KNN
 - Decision Trees
 - Random Forest
-- Performance Validation
+- Feature Importance Analysis
+- Performance Evaluation using ROC
 
 ## Results  
 ROC Curve of the Classification Models  
@@ -53,4 +54,8 @@ Confusion Matrix for KNN
 
 Best Model: **KNN**  
 
-- Based on our ROC Curve, the KNN model appeared to be the superior model. As the TPR(True Positive Rate) increases, the False Positive Rate largely stays the same. This is good because it means our model overall is an accurately predicting Matches and Rejections based on the training data and is rarely misclassifying people, ie matching someone that should have been rejected. 
+- Based on our ROC Curve, the KNN model appeared to be the superior model. As the TPR(True Positive Rate) increases, the False Positive Rate largely stays the same. This is good because it means our model overall is an accurately predicting Matches and Rejections based on the training data and is rarely misclassifying people, ie matching someone that should have been rejected.
+
+- One thing to note is that because our KNN model is a 1NN model that each test point becomes its own region which can lead to overfitting. We chose to implement Decision Trees and Random Forest in an attempt to make our models more interpretable and a bit more robust to deal with an overfitted training data. Decision Trees and Random Forests also have access to a indicator variable in Python called "importance". Using Feature Importance Analysis, the significance of each attribute can be rated.
+
+- Using Feature Importance Analysis, we found that a person's attractiveness, sense of humor and shared interests with a person had over a 50% impact on their chances of matching with another person!
