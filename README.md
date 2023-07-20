@@ -72,4 +72,5 @@ Best Model: **KNN**
 
 - Many variables had to be dropped from the beginning due to high correlation. This was due to the fact that many variables were related to one another or often were linked with a 'primary key'. Combining the dataset with a Database management tool such as SQL and breaking the large csv into smaller quieries could lead to more fruitful results.
 
-
+## Notebook
+For a more indepth look at the actual code, the notebook can be found ![here](https://github.com/MorphingGrid/Speed-Dating-Algorithm/blob/main/src/main/Final_Project_Notebook.ipynb)
