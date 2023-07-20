@@ -18,7 +18,7 @@
 - [What could be Improved](#what-could-be-improved)
 
 ## Data Problem
-The purpose of this study aims to determine the most desirable attributes in a person that people look for when searching for a potential partner, using popular Classification Models such as KNN, Decision Trees and Random Forest. This is done by figuring out which variables have the highest significance on the response variable match, a binary variable where 0-No Match and 1-Match. More than ever, people are connected to others through their electornics and smart phones, but the frequency of face to face interaction is on the downtrend, resulting in many feeling growing feelings of social anxiety and second guessing their social ability. This project aims to help classify what is seen as desirable in modern society to help people navigate the information age. 
+The purpose of this study aims to determine the most desirable attributes in a person that people look for when searching for a potential partner, using popular Classification Models such as KNN, Decision Trees and Random Forest. This is done by figuring out which variables have the highest significance on the response variable: **match**, a binary variable where 0-No Match and 1-Match. More than ever, people are connected to others through their electornics and smart phones, but the frequency of face to face interaction is on the downtrend, resulting in growing feelings of social anxiety and issues forming relationships. This project aims to help classify what is seen as desirable to help people navigate the information age. 
 
 ## Dataset Source
 [Speed Dating Dataset](https://www.kaggle.com/datasets/whenamancodes/speed-dating)  
@@ -55,15 +55,15 @@ Confusion Matrix for KNN
 
 Best Model: **KNN**  
 
-- Based on our ROC Curve, the KNN model appeared to be the superior model. As the TPR(True Positive Rate) increases, the False Positive Rate largely stays the same. This is good because it means our model overall is an accurately predicting Matches and Rejections based on the training data and is rarely misclassifying people, ie matching someone that should have been rejected.
+- Based on our ROC Curve, the KNN model appeared to be the superior model. As the TPR(True Positive Rate) increases, the False Positive Rate largely stays the same. This is good because it means our model overall is accurately predicting Matches and Rejections based on the training data and is rarely misclassifying people, ie matching someone that should have been rejected.
 
-- One thing to note is that because our KNN model is a 1NN model that each test point becomes its own region which can lead to overfitting. We chose to implement Decision Trees and Random Forest in an attempt to make our models more interpretable and a bit more robust to deal with an overfitted training data. Decision Trees and Random Forests also have access to a indicator variable in Python called "importance". Using Feature Importance Analysis, the significance of each attribute can be rated.
+- One thing to note is that because our KNN model is a 1NN model, each test point becomes its own region which can lead to overfitting. We chose to implement Decision Trees and Random Forest in an attempt to make our models more interpretable and a bit more robust to deal with an overfitted training data. Decision Trees and Random Forests also have access to a indicator variable in Python called "importance". Using Feature Importance Analysis, the significance of each attribute can be rated.
 
 - Using Feature Importance Analysis, we found that a person's attractiveness, sense of humor and shared interests with a person had over a 50% impact on their chances of matching with another person!  
 
 ## Lessons Learned
 
--  Initially, our response variable was very imbalanced. There was a far larging amount of rejections in the training set than matches(it's tough out here). To fix this, we implemented Synthetic Minority Oversample Technique, or SMOTE, an alternative for bootstrapping to balance the response variable with an equal number of Matches to No Matches. This helps reduces overfitting as the rows are not complete duplicates, but synthetic instances
+-  Initially, our response variable was very imbalanced. There was a far larger amount of rejections in the training set than matches(it's tough out here). To fix this, we implemented Synthetic Minority Oversample Technique, or SMOTE, an alternative for bootstrapping to balance the response variable with an equal number of Matches to No Matches. This helps reduces overfitting as the rows are not complete duplicates, but synthetic instances
 
 ## What could be Improved  
 
