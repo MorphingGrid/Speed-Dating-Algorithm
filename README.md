@@ -30,9 +30,8 @@ The purpose of this study aims to determine the most desirable attributes in a p
 ## Methods
 - Data Exploration
 - SMOTE for Imbalanced Classification
-- KNN
-- Decision Trees
-- Random Forest
+- Hyperparameter Tuning
+- Classification Modelling(KNN, Decision Trees, Random Forest)
 - Feature Importance Analysis
 - Performance Evaluation using ROC
 
