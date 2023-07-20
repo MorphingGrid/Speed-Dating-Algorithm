@@ -14,6 +14,8 @@
 - [Tech Stack](#tech-stack)
 - [Methods](#methods)
 - [Results](#results)
+- [Lessons Learned](#lessons-learned)
+- [What could be Improved](#what-could-be-improved)
 
 ## Data Problem
 The purpose of this study aims to determine the most desirable attributes in a person that people look for when searching for a potential partner, using popular Classification Models such as KNN, Decision Trees and Random Forest. This is done by figuring out which variables have the highest significance on the response variable match, a binary variable where 0-No Match and 1-Match. More than ever, people are connected to others through their electornics and smart phones, but the frequency of face to face interaction is on the downtrend, resulting in many feeling growing feelings of social anxiety and second guessing their social ability. This project aims to help classify what is seen as desirable in modern society to help people navigate the information age. 
@@ -58,4 +60,16 @@ Best Model: **KNN**
 
 - One thing to note is that because our KNN model is a 1NN model that each test point becomes its own region which can lead to overfitting. We chose to implement Decision Trees and Random Forest in an attempt to make our models more interpretable and a bit more robust to deal with an overfitted training data. Decision Trees and Random Forests also have access to a indicator variable in Python called "importance". Using Feature Importance Analysis, the significance of each attribute can be rated.
 
-- Using Feature Importance Analysis, we found that a person's attractiveness, sense of humor and shared interests with a person had over a 50% impact on their chances of matching with another person!
+- Using Feature Importance Analysis, we found that a person's attractiveness, sense of humor and shared interests with a person had over a 50% impact on their chances of matching with another person!  
+
+## Lessons Learned
+
+-  Initially, our response variable was very imbalanced. There was a far larging amount of rejections in the training set than matches(it's tough out here). To fix this, we implemented Synthetic Minority Oversample Technique, or SMOTE, an alternative for bootstrapping to balance the response variable with an equal number of Matches to No Matches. This helps reduces overfitting as the rows are not complete duplicates, but synthetic instances
+
+## What could be Improved  
+
+-  Using Feature Importance Analysis, we found that many of the variable had very little importance or predictive power at all. Retraining the model or redoing the project after removing many of these predictors could yield better results.
+
+- Many variables had to be dropped from the beginning due to high correlation. This was due to the fact that many variables were related to one another or often were linked with a 'primary key'. Combining the dataset with a Database management tool such as SQL and breaking the large csv into smaller quieries could lead to more fruitful results.
+
+
